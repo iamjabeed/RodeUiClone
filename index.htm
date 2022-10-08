@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rode | Clone</title>
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e7a08cecd1.js"
+      crossorigin="anonymous"></script>
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css"
+      rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          screen: {
+            sm: "480px",
+            md: "768px",
+            lg: "1200px",
+            xl: "1440px",
+          },
+          extend: {
+            // colors: {
+            // },
+          },
+        },
+      };
+    </script>
+    <body class="font-Inter cursor-pointer">
+      <!-- navigation-top section -->
+      <div class="hidden lg:flex items-center justify-around py-2 ">
+        <div class="flex items-center">
+          <img src="./images/location.png" class="w-[20px]" alt="location">
+          <h2 class="text-[#758283] uppercase">ind</h2>
+          <img src="./images/arrow-down.png" class="ml-2 w-[10px] "
+            alt="list-down">
+        </div>
+        <div>
+          <img src="./images/user.png
+            " alt="user" class="w-[20px]">
+        </div>
+      </div>
+      <hr class="mx-1 hidden md:block text-[#758283]"/>
+      <!-- main-navbar -->
+      <nav class="bg-[#FFFFFF] py-6 md:py-4 px-4 sticky top-0 z-[999] ">
+        <div class="flex items-center justify-between lg:hidden">
+          <div class="flex items-center">
+            <img src="./images/hamburger-menu.svg" alt="menu" class="w-[30px]
+              mr-6">
+            <div class="flex items-center">
+              <img src="./images/location.png" class="w-[20px]" alt="location">
+              <h2 class="text-black uppercase">ind</h2>
+              <img src="./images/arrow-down.png" class="ml-2 w-[10px] "
+                alt="list-down">
+            </div>
+          </div>
+          <div>
+            <img src="./images/road-logo.svg" class="w-[75px] sm:w-[90]
+              md:w-[110px]" alt="logo">
+          </div>
+          <div>
+            <img src="./images/magnifying-glass.png" alt="search"
+              class="w-[30px]">
+          </div>
+        </div>
+        <!-- main navbar for large screens -->
+        <!-- fixed top-0 left-0 right-0 shadow-lg -->
+        <div class="hidden lg:flex items-center justify-around py-4 ">
+          <div>
+            <img src="./images/road-logo.svg" class="w-[100px]" alt="logo">
+          </div>
+          <div class="uppercase">
+            <a class="mr-2 text-sm font-medium" href="#">Products </a>
+            <a class="mr-2 text-sm font-medium" href="#">user guides</a>
+            <a class="mr-2 text-sm font-medium" href="#">solutions</a>
+            <a class="mr-2 text-sm font-medium" href="#">apparel</a>
+            <a class="mr-2 text-sm font-medium" href="#">Support</a>
+          </div>
+          <div>
+            <img src="./images/magnifying-glass.png" alt="search"
+              class="w-[30px]">
+          </div>
+        </div>
+      </nav>
+      <!-- hero-banner -->
+      <section id="hero" class="relative">
+        <div class="hidden lg:block bg-[url('./images/hero-main.jpeg')] bg-cover
+          bg-center bg-no-repeat h-[95vh]">
+        </div>
+        <!-- mobile-view -->
+        <div class=" lg:hidden">
+          <img src="./images/mobile-main-hero.jpg" class="h-auto w-full
+            object-cover" alt="hero-banner">
+        </div>
+        <!-- hero-description -->
+        <div class="px-4 pt-10 md:pt-14 lg:pt-0 lg:mx-[10%] lg:my-[16%] bg-black
+          lg:bg-transparent flex flex-col items-center text-center lg:absolute
+          lg:top-0 lg:right-0">
+          <img src="./images/rode-caster-proII.svg" class="w-[50%] lg:w-full"
+            alt="rode-cast-img">
+          <h2 class="text-white uppercase font-normal text-lg mt-8 mb-4">the
+            revolution is here</h2>
+          <p class="text-sm text-center text-white pb-8 max-w-lg md:base xl:lg">The
+            RØDECaster Pro II is the world's most powerful all-in-one audio
+            solution for streamers, podcasters, musicians, and creators. Take
+            your content to the next level.</p>
+          <div class="flex flex-wrap justify-center mb-8">
+            <button type="button" class="flex items-center text-[#AD9970]
+              text-base font-bold rounded uppercase">learn more </button>
+            <button type="button" class="bg-[#AD9970] text-base font-medium
+              text-white rounded-full uppercase px-6 py-2 ml-4 transform-all
+              duration-800 ease hover:bg-white hover:text-[#AD9970]">buy now</button>
+          </div>
+        </div>
+      </section>
+      <!-- headphones section -->
+      <section id="headphones" class="relative">
+        <div class="hidden lg:block bg-[url('./images/headphones-bg.jpeg')]
+          bg-cover
+          bg-center bg-no-repeat h-[80vh]">
+        </div>
+        <!-- hero-description -->
+        <div class="px-4 pt-10 pb-8 md:pt-14 bg-white md:bg-transparent lg:pt-0
+          lg:mx-[4%] lg:my-[10%] bg-black
+          lg:bg-transparent flex flex-col items-center text-center lg:absolute
+          lg:top-0 lg:leftt-0">
+          <img src="./images/NTH-100.svg" alt="nth-100" class="w-[50%]
+            lg:w-full">
+          <h2 class="text-black uppercase font-normal text-lg mt-8 mb-4">Your
+            Search For The Perfect Headphones Is Over</h2>
+          <p class="text-sm text-center text-gray pb-8 max-w-lg md:base xl:lg">Experience
+            sound like never before with the NTH-100s. Exceptional sonic
+            performance, superior comfort and iconic looks that inspires
+            creativity.</p>
+          <div class="flex flex-wrap justify-center">
+            <button type="button" class="flex items-center text-[#AD9970]
+              text-base font-bold rounded uppercase">learn more </button>
+            <button type="button" class="bg-[#AD9970] text-base font-medium
+              text-white rounded-full uppercase px-6 py-2 ml-4 transform-all
+              duration-800 ease hover:bg-white hover:text-[#AD9970]">buy now</button>
+          </div>
+        </div>
+      </section>
+      <!-- usb-microphones -->
+      <section id="microphones" class="relative">
+        <div class="hidden lg:block bg-[url('./images/usb-microphones.jpeg')]
+          bg-cover bg-center bg-no-repeat lg:h-[95vh]">
+        </div>
+        <!-- mobile-view -->
+        <div class="lg:hidden">
+          <img src="./images/mobile-microphone.jpg" class="h-auto w-full
+            object-cover" alt="hero-banner" alt="not found">
+        </div>
+        <!-- description-usb -->
+        <div class="px-4 pt-10 md:pt-14 lg:pt-0 lg:mx-[2%] lg:my-[16%]
+          bg-transparent
+          lg:bg-transparent flex flex-col items-center text-center lg:absolute
+          lg:top-0 lg:right-0 lg:max-w-[40%]">
+          <img src="./images/NT-USB.svg" alt="">
+          <h2 class="text-black font-normal text-base md:font-semibold
+            md:text-xl mt-8 mb-4">Studio-Quality Recording, Made Simple</h2>
+          <p class="text-sm text-center text-gray pb-8 max-w-lg md:base xl:lg">The
+            NT-USB is a studio-quality USB condenser microphone that offers
+            impeccable audio, elegant looks and premium features, all in an
+            easy-to-use form factor, the NT-USB will have you sounding like a
+            pro in seconds.</p>
+          <div class="flex flex-wrap justify-center mb-8">
+            <button type="button" class="flex items-center text-[#AD9970]
+              text-base font-bold rounded uppercase">learn more </button>
+            <button type="button" class="bg-[#AD9970] text-base font-medium
+              text-white rounded-full uppercase px-6 py-2 ml-4 transform-all
+              duration-800 ease hover:bg-white hover:text-[#AD9970]">buy now</button>
+          </div>
+        </div>
+      </section>
+      <!-- explore -->
+      <section id="explore" class="bg-white">
+        <h2 class="text-center my-8 text-2xl font-bold text-[#767676]
+          md:text-4xl">Explore The RØDE Range</h2>
+        <!-- categories -->
+        <div class="mb-10 bg-[url('./images/microphones-banner.png')] bg-cover
+          bg-center bg-no-repeat hover:bg-blend-darken w-full sm:w-2/3 mx-auto
+          cursor-pointer">
+          <p class="text-center font-semibold text-white text-4xl md:text-6xl
+            uppercase py-14 md:py-20 hover:bg-black hover:bg-opacity-25
+            transition-all duration-500">microphones</p>
+        </div>
+        <div class="mb-10 bg-[url('./images/interfaces-banner.jpeg')]
+          bg-no-repeat bg-cover bg-center hover:bg-blend-darken w-full sm:w-2/3
+          mx-auto cursor-pointer">
+          <p class="text-center font-semibold text-white text-4xl md:text-6xl
+            uppercase py-14 md:py-20 mb-8 hover:bg-black hover:bg-opacity-25
+            transition-all duration-500">interfaces & mixers</p>
+        </div>
+        <div class="mb-10 bg-[url('./images/software-banner.png')] bg-no-repeat
+          bg-cover bg-center hover:bg-blend-darken w-full sm:w-2/3 mx-auto
+          cursor-pointer">
+          <p class="text-center font-semibold text-white text-4xl md:text-6xl
+            uppercase py-14 md:py-20 mb-8 hover:bg-black hover:bg-opacity-25
+            transition-all duration-500">software</p>
+        </div>
+        <div class="mb-10 bg-[url('./images/accessories-banner.png')]
+          bg-no-repeat bg-cover bg-center hover:bg-blend-darken w-full sm:w-2/3
+          mx-auto cursor-pointer">
+          <p class="text-center font-semibold text-white text-4xl md:text-6xl
+            uppercase py-14 md:py-20 hover:bg-black hover:bg-opacity-25
+            transition-all duration-500">accessories</p>
+        </div>
+        <h2 class="text-center my-8 text-2xl font-bold text-[#C0B090]
+          md:text-4xl">Latest From The RØDE Blog</h2>
+      </section>
+      <!-- rode-blog -->
+      <section class="bg-[ #F8F9FA] container py-24 mx-auto sm:w-2/3">
+        <div class="inline-grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+          <div class="bg-white">
+            <h1 class="text-black text-center text-xl font-normal md:text-2xl
+              font-semibold">XLR vs USB Microphones: Which is Best <br> for You?</h1>
+            <img src="./images/thumbnail-1.jpg" alt="error">
+            <p class="text-black text-base font-medium text-center">We explore
+              the differences between XLR and USB microphones, <br> the
+              advantages of each and which type is best suited to your <br>
+              needs.</p>
+            <button type="button" class="px-4 py-1 mt-4 mb-4 text-sm font-medium
+              border border-[#AD9970] text-white bg-[#AD9970] rounded-full
+              uppercase transform-all duration-500 hover:bg-white
+              hover:text-[#AD9970]">learn more</button>
+          </div>
+          <div class="bg-white">
+            <h1 class="text-black text-center text-xl font-normal md:text-2xl
+              font-semibold">XLR vs USB Microphones: Which is Best <br> for You?</h1>
+            <img src="./images/thumbnail-2.jpeg" alt="error">
+            <p class="text-black text-base font-medium text-center">We explore
+              the differences between XLR and USB microphones, <br> the
+              advantages of each and which type is best suited to your <br>
+              needs.</p>
+            <button type="button" class="px-4 py-1 mt-4 mb-4 text-sm font-medium
+              border border-[#AD9970] text-white bg-[#AD9970] rounded-full
+              uppercase transform-all duration-500 hover:bg-white
+              hover:text-[#AD9970]">learn more</button>
+          </div>
+          <div class="bg-white">
+            <h1 class="text-black text-center text-xl font-normal md:text-2xl
+              font-semibold">XLR vs USB Microphones: Which is Best <br> for You?</h1>
+            <img src="./images/thumbnail-3.jpg" alt="error">
+            <p class="text-black text-base font-medium text-center">We explore
+              the differences between XLR and USB microphones, <br> the
+              advantages of each and which type is best suited to your <br>
+              needs.</p>
+            <button type="button" class="px-4 py-1 mt-4 text-sm font-medium
+              border border-[#AD9970] text-white bg-[#AD9970] rounded-full
+              uppercase transform-all duration-500 hover:bg-white
+              hover:text-[#AD9970]">learn more</button>
+          </div>
+          <div class="bg-white">
+            <h1 class="text-black text-center text-xl font-normal md:text-2xl
+              font-semibold">XLR vs USB Microphones: Which is Best <br> for You?</h1>
+            <img src="./images/thumbnail-4.jpg" alt="error">
+            <p class="text-black text-base font-medium text-center">We explore
+              the differences between XLR and USB microphones, <br> the
+              advantages of each and which type is best suited to your <br>
+              needs.</p>
+            <button type="button" class="px-4 py-1 mt-4 text-sm font-medium
+              border border-[#AD9970] text-white bg-[#AD9970] rounded-full
+              uppercase transform-all duration-500 hover:bg-white
+              hover:text-[#AD9970]">learn more</button>
+          </div>
+        </div>
+      </section>
+         <!-- Footer -->
+    <footer class="bg-white">
+      <div class="py-8 md:py-24">
+        <hr class="hidden md:block text-[#dedfe0]">
+      </div>
+      <div class="container mx-auto flex md:items-center md:justify-between lg:items-start lg:flex-row md:flex-nowrap flex-wrap flex-col w-full lg:w-2/3">
+        <div class="md:mx-0 mx-auto text-center md:text-left lg:w-1/3">
+          <a class="items-center">
+            <img src="./images/road-logo.svg" class="mr-10" alt="logo">
+          </a>
+        </div>
+        <div class="flex flex-wrap md:mt-0 mt-10 md:text-left text-center lg:w-2/3">
+          <!-- Menu 1 -->
+          <div class="md:w-1/3 w-full">
+            <h2 class="font-medium text-[#262626] text-sm mb-3">Products</h2>
+            <nav class="list-none mb-10 text-sm">
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Microphones</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Headphones</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Interfaces & Mixers</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Accessories</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Software</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Apparel</a>
+              </li>
+            </nav>
+          </div>
+          <!-- Menu 2 -->
+          <div class="md:w-1/3 w-full">
+            <h2 class="font-medium text-[#262626] text-sm mb-3">Support</h2>
+            <nav class="list-none mb-10 text-sm">
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Contact RØDE</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Service Center</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Warranty</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Where to Buy</a>
+              </li>
+            </nav>
+          </div>
+          <!-- Menu 3 -->
+          <div class="md:w-1/3 w-full">
+            <h2 class="font-medium text-[#262626] text-sm mb-3">Company</h2>
+            <nav class="list-none mb-10 text-sm">
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">About RØDE</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">News & Info</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Job Opportunities</a>
+              </li>
+              <!-- Menu 4 -->
+              <li class="mb-2">
+                <h2 class="font-medium text-[#262626] text-sm mb-3">Account</h2>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Manage your Account</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-[#484848] hover:text-[#6c757d]">Create your Account</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+        <div class="lg:w-1/3 w-full text-center lg:text-right lg:w-1/3">
+          <h2 class="font-medium text-[#262626] text-xl mb-3">Subscribe to our Latest
+            <br class="hidden lg:inline-block">news and offers
+          </h2>
+          <button type="button" class="px-4 py-1 mb-4 text-sm font-medium border border-[#AD9970] text-white bg-[#AD9970] rounded-full capitalize transform-all duration-500 hover:bg-white hover:text-[#AD9970]">sign up</button>
+        </div>
+      </div>
+      <div class="w-full lg:w-2/3 mx-auto">
+        <div class="py-4 md:py-8">
+          <hr class="hidden md:block text-[#dedfe0]">
+        </div>
+        <div class="container mx-auto pb-8 flex flex-col md:flex-row items-center justify-between">
+          <div class="flex">
+            <p class="text-[#484848] text-xs text-center sm:text-left">© 2022 Jabeed All Rights Reserved.</p>
+          </div>
+          <div class="flex items-center py-4">
+            <p class="text-[#484848] text-xs capitalize">privacy policy</p>
+            <p class="px-4">|</p>
+            <p class="text-[#484848] text-xs capitalize">Terms & Conditions</p>
+          </div>
+          <div class="flex items-center gap-4 sm:mt-0 mt-2 justify-center sm:justify-start">
+            <i class='bx bxl-facebook-circle text-[#AD9970] text-2xl'></i>
+            <i class='bx bxl-twitter text-[#AD9970] text-2xl' ></i>
+            <i class='bx bxl-instagram text-[#AD9970] text-2xl' ></i>
+            <i class='bx bxl-youtube text-[#AD9970] text-2xl' ></i>
+            <i class='bx bxl-tiktok text-[#AD9970] text-2xl'></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </body>
+  </html>
+
