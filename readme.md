@@ -3,7 +3,7 @@
 
 ![badges](https://img.shields.io/badge/rode.com-tailwindcss-brightgreen)
 
-## [Live:]()
+## [Live](https://rode-ui-clone-web.netlify.app/)
 
 ### project name: rode.com | clone by tailwind css
 ## Hy, there!!
